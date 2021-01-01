@@ -7,5 +7,5 @@ RUN \
 
 COPY Server.rar /etc/Server
 
-
+CMD ["bash"]
 
