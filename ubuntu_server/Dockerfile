@@ -5,7 +5,7 @@ ENV LANG en_US.utf8
 
 
 COPY Server.rar /.
-RUN sudo apt-get install unzip
+RUN apt-get install -y install unzip
 RUN unzip Server.rar
 RUN chmod +x /Server.x86_64
 CMD /Server.x86_64
