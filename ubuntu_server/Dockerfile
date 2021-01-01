@@ -5,8 +5,8 @@ RUN \
     apt-get install -y unzip
 
 
-Copy Server.rar /etc
-Run unzip Server.rar
-Run chmod +x /Server.x86_64
+COPY Server.rar /etc/Server
+RUN unzip Server.rar
+RUN chmod +x /Server.x86_64
 CMD /Server.x86_64
 
