@@ -1,1 +1,21 @@
 
+version: "2"
+
+services:
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    depends_on:
+      - ubuntu_server1
+    ports:
+      - 7210:7210
+
+
+  ubuntu_server1:
+    image: ubuntu_server1
+    container_name: ubuntu_server1
+    build: ./ubuntu_server
+    restart: always
+    ports:
+      - 7777:7777
