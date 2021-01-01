@@ -16,6 +16,5 @@ services:
     image: ubuntu_server1
     container_name: ubuntu_server1
     build: ./ubuntu_server
-    restart: always
     ports:
       - 7777:7777
