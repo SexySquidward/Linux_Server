@@ -12,5 +12,5 @@ RUN \
 
 COPY Server.rar /etc/Server
 
-CMD ["/bin/bash"]
+
 
