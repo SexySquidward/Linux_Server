@@ -6,5 +6,5 @@ RUN \
 
 
 
-CMD ["/bin/bash"]
+
 
