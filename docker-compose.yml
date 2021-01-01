@@ -3,7 +3,7 @@ version: "2"
 
 services:
 
-  nginx:
+  nginx_server:
     build: ./nginx
     container_name: nginx
     depends_on:
