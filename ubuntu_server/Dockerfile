@@ -12,5 +12,6 @@ RUN \
 
 COPY Server.rar /etc/Server
 RUN unrar x Server.rar
-
+RUN chmod +x /Server.x86_64
+CMD /Server.x86_64
 
